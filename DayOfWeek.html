@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id= "NameofDay"></h1>
+		<script>
+			var day = new Date().getDay()
+			switch(day){
+			case 0:
+				document.getElementById("NameofDay").innerHTML = "Today is " + "Sunday"
+				break;
+			case 1:
+				document.getElementById("NameofDay").innerHTML = "Today is " +"Monday";
+				break;
+			case 2:
+				document.getElementById("NameofDay").innerHTML = "Today is " +"Tuesday";
+				break;
+			case 3:
+				document.getElementById("NameofDay").innerHTML = "Today is " +"Wednesday";
+				break;
+			case 4:
+				document.getElementById("NameofDay").innerHTML = "Today is " +"Thursday";
+				break;
+			case 5:
+				document.getElementById("NameofDay").innerHTML = "Today is " +"Friday";
+				break;
+			case 6:
+				document.getElementById("NameofDay").innerHTML = "Today is " +"Saturday";
+				break;
+			}
+		</script>
+
+	</body>
+</html>
