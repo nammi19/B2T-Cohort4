@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+
+		<input type="button" onclick="TypesOfFruit()" value="Push for Prompt">
+		
+		<h1 id="AddFruit"></h1>
+
+		<script>
+			var fruits = ["Apple", "Orange", "Kiwi"];
+
+			function TypesOfFruit(){
+				var user = prompt("Add new fruit");
+				fruits.push(user.toLowerCase());
+				fruits.sort();
+
+				document.getElementById("AddFruit").innerHTML= fruits.join(" with ");
+			}
+
+		</script>
+	</body>
+</html>
+
+
