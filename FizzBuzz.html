@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+		<h1 id="text"></h1>
+		<script>
+			var num = 0;
+			while(num <= 100){
+				if(num%3 == 0 && num%5==0){
+					console.log("FizzBuzz");
+					document.getElementById("text").innerHTML += "FizzBuzz" +"<br>";
+				}
+				else if(num%3 == 0){
+					console.log("Fizz");
+					document.getElementById("text").innerHTML += "Fizz"+ "<br>";
+				}
+				else if (num%5 == 0){
+					console.log("Buzz");
+					document.getElementById("text").innerHTML += "Buzz" +"<br>";
+				}
+				else{
+					console.log(num);
+					document.getElementById("text").innerHTML += num +"<br>";
+				}
+
+				num++;
+			}
+		</script>
+
+	</body>
+</html>
