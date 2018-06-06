@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<ul id="colorScheme"></ul>
+		<script>
+			var colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+			var o = ["th", "st", "nd", "rd"];
+			for (var i = 0; i < colors.length; i++){
+				if(colors[i] == "Blue"){
+					document.getElementById("colorScheme").innerHTML += "<li>" + "1" +o[i+1] + " color is " +colors[i] + "</li>";
+				}else if(colors[i] == "Green"){
+					document.getElementById("colorScheme").innerHTML += "<li>" + "2" +o[i+1] + " color is " +colors[i] + "</li>";
+				}else if(colors[i] == "Red"){
+					document.getElementById("colorScheme").innerHTML += "<li>" + "3" +o[i+1] + " color is " +colors[i] + "</li>";
+				}else{
+					document.getElementById("colorScheme").innerHTML += "<li>" + (i+1) + o[0] + " color is " +colors[i] + "</li>";
+
+
+				}
+			}
+		</script>
+
+	</body>
+</html>
