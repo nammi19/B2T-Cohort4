@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<style type="text/css">
+			#box {
+				background-color: green;
+				height: 230px;
+				width: 200px;
+			}
+		</style>
+
+		<div id="box"></div>
+		<input id = "colorChange" type="button" value= "on">
+
+		<script>
+			var text = document.getElementById("colorChange");
+			text.addEventListener("click",
+				function(){
+					if(text.value=="on"){
+						text.value="off";
+					}else{
+						text.value="on"
+					}
+				})
+			var color = document.getElementById("box");
+			color.addEventListener("mouseenter",
+				function(){
+					if(text.value=="on"){
+						color.style.backgroundColor="red";
+					}
+				})
+			color.addEventListener("mouseleave",
+				function(){
+					if(text.value=="on"){
+						color.style.backgroundColor="green";
+					}
+				})
+
+
+
+
+			
+		</script>
+
+
+		
+
+	</body>
+</html>

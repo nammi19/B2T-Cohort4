@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<ul id="transcript" ></ul>
+		<script>
+			var names = ["Lola", "Nazmun", "Ben", "Nasir", "Rafael", "Nickolas"];
+			var grades = ["C", "A", "B"];
+			var i =0;     //for while loop, you need number variable 
+			while(i < names.length){
+				if (names[i].length <5){      //names[i].length for indiv. element
+					document.getElementById("transcript").innerHTML += "<li>" +names[i]+ " receives "+ grades[1] + "</li>";
+				}else if(names[i].charAt(0) == "N"){            // charAt(), w/o charAt [];    (== bcoz we're comparing, not assigning a value)
+					document.getElementById("transcript").innerHTML += "<li>" +names[i]+ " receives "+ grades[2] + "</li>";
+				}else{
+					document.getElementById("transcript").innerHTML += "<li>" +names[i]+ " receives "+ grades[0] + "</li>";
+				}i++;   // should be within the while loop
+				  
+			}
+		</script>
+
+	</body>
+</html>
